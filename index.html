@@ -15,7 +15,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="https://www.myitsupportusa.com/" aria-label="My IT Support USA home">
-      <span class="brand-mark" aria-hidden="true">IT</span><span>My IT Support <strong>USA</strong></span>
+      <img src="assets/Primary%20Logo.png" alt="My IT Support USA" class="brand-logo">
     </a>
   </header>
 
@@ -94,13 +94,16 @@
           </div><div class="score-labels"><span>Not at all likely</span><span>Extremely likely</span></div><p class="field-error" id="recommendation_score-error" aria-live="polite"></p>
         </fieldset>
 
-        <fieldset class="question" data-required-group="public_review_willingness" tabindex="-1">
-          <legend><span class="question-number">6</span><span>Would you be willing to share your experience publicly to help other businesses choose an IT provider? <span class="required">Required</span></span></legend>
-          <div class="radio-list compact">
-            <label class="choice"><input type="radio" name="public_review_willingness" value="Yes" required><span>Yes</span></label>
-            <label class="choice"><input type="radio" name="public_review_willingness" value="Maybe"><span>Maybe</span></label>
-            <label class="choice"><input type="radio" name="public_review_willingness" value="Not right now"><span>Not right now</span></label>
-          </div><p class="field-error" id="public_review_willingness-error" aria-live="polite"></p>
+        <fieldset class="question" data-required-group="service_value" tabindex="-1">
+          <legend><span class="question-number">6</span><span>What do you value most about our service? <span class="required">Required</span></span></legend>
+          <div class="radio-list">
+            <label class="choice"><input type="radio" name="service_value" value="Friendly and helpful technicians" required><span>Friendly and helpful technicians</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Fast response times"><span>Fast response times</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Problems are resolved properly"><span>Problems are resolved properly</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Clear communication"><span>Clear communication</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Reliability and consistency"><span>Reliability and consistency</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Other"><span>Other</span></label>
+          </div><p class="field-error" id="service_value-error" aria-live="polite"></p>
         </fieldset>
 
         <section class="submit-section">
@@ -113,7 +116,7 @@
 
     <section id="success-section" class="success-section" hidden aria-labelledby="success-heading">
       <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><p class="eyebrow">Response received</p><h2 id="success-heading" tabindex="-1">Thank You for Your Feedback</h2><p>Your response has been received. We appreciate you taking the time to help us improve how we support your business.</p></div>
-      <div id="review-section" class="review-card" hidden><span class="google-icon" aria-hidden="true">G</span><h2>Would You Share Your Experience on Google?</h2><p>Online reviews help other businesses make a more informed decision when choosing an IT provider. If you are comfortable doing so, we would appreciate you sharing an honest review of your experience with My IT Support USA.</p><a class="button primary" href="https://g.page/r/CQuyCfl7Ayj5EAI/review" target="_blank" rel="noopener noreferrer">Leave an Honest Google Review <span aria-hidden="true">↗</span></a><p class="optional-note">Leaving a review is completely optional. We value your feedback either way.</p></div>
+      <div id="review-section" class="review-card" hidden><img src="assets/Google-Review-Logo.png" alt="Google Reviews" class="google-review-logo"><h2>Would You Share Your Experience on Google?</h2><p>Online reviews help other businesses make a more informed decision when choosing an IT provider. If you are comfortable doing so, we would appreciate you sharing an honest review of your experience with My IT Support USA.</p><a class="button primary" href="https://g.page/r/CQuyCfl7Ayj5EAI/review" target="_blank" rel="noopener noreferrer">Leave an Honest Google Review <span aria-hidden="true">↗</span></a><p class="optional-note">Leaving a review is completely optional. We value your feedback either way.</p></div>
     </section>
   </main>
 

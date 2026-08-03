@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This is a lightweight, accessible client satisfaction survey for My IT Support USA. It is built with plain HTML, CSS, and JavaScript and can be hosted directly on GitHub Pages without dependencies or a build process. The six-question survey gathers service satisfaction, responsiveness, business confidence, improvement feedback, recommendation likelihood, and public-review willingness.
+This is a lightweight, accessible client satisfaction survey for My IT Support USA. It is built with plain HTML, CSS, and JavaScript and can be hosted directly on GitHub Pages without dependencies or a build process. The six-question survey gathers service satisfaction, responsiveness, business confidence, improvement feedback, recommendation likelihood, and most-valued service attribute.
 
 ## Files
 
@@ -22,7 +22,7 @@ The review button in the hidden `#review-section` in `index.html` links to `http
 
 ### Review invitation rule
 
-The same optional, honest Google review invitation is displayed to **every respondent after every successful submission**. It is not controlled, personalized, hidden, or redirected based on any survey response, including satisfaction, recommendation score, or public-review willingness.
+The same optional, honest Google review invitation is displayed to **every respondent after every successful submission**. It is not controlled, personalized, hidden, or redirected based on any survey response, including satisfaction, recommendation score, or most-valued service attribute.
 
 ## Local testing
 
