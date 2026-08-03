@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Satisfaction Survey | My IT Support USA</title>
+  <meta name="description" content="Share feedback about your experience with My IT Support USA and help us improve how we support your business.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="My IT Support USA Client Satisfaction Survey">
+  <meta property="og:description" content="Share feedback about your experience and help us improve how we support your business.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://www.myitsupportusa.com/" aria-label="My IT Support USA home">
+      <img src="assets/Primary%20Logo.png" alt="My IT Support USA" class="brand-logo">
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Client satisfaction survey</p>
+      <h1 id="page-title">How Are We Doing?</h1>
+      <p class="intro">Your feedback helps us improve how we support your business. This survey should take less than two minutes to complete.</p>
+      <ul class="indicators" aria-label="Survey details">
+        <li><span aria-hidden="true">✓</span> 6 brief questions</li>
+        <li><span aria-hidden="true">◷</span> Less than 2 minutes</li>
+        <li><span aria-hidden="true">♡</span> Your feedback matters</li>
+      </ul>
+    </section>
+
+    <section class="survey-card" aria-label="Client satisfaction survey">
+      <form id="client-survey-form" action="https://formspree.io/f/mvzeelvj" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New My IT Support USA Client Survey Response">
+        <input type="hidden" name="survey_name" value="2026 Client Satisfaction Survey">
+        <input type="hidden" name="submission_source" value="Client Survey">
+        <input type="hidden" name="page_url" id="page-url">
+        <input type="hidden" name="submission_timestamp" id="submission-timestamp">
+        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+
+        <section class="form-section information" aria-labelledby="information-heading">
+          <div class="section-heading"><p class="section-kicker">Before we begin</p><h2 id="information-heading">Your Information</h2><p>Both fields are optional.</p></div>
+          <div class="field-grid">
+            <div class="field"><label for="name">Name <span>(optional)</span></label><input type="text" id="name" name="name" autocomplete="name"><p class="helper">Providing your name allows us to thank you or follow up regarding your feedback.</p></div>
+            <div class="field"><label for="company">Company <span>(optional)</span></label><input type="text" id="company" name="company" autocomplete="organization"></div>
+          </div>
+        </section>
+
+        <fieldset class="question" data-required-group="overall_satisfaction" tabindex="-1">
+          <legend><span class="question-number">1</span><span>Overall, how satisfied are you with My IT Support USA? <span class="required">Required</span></span></legend>
+          <div class="radio-list">
+            <label class="choice"><input type="radio" name="overall_satisfaction" value="Extremely satisfied" required><span>Extremely satisfied</span></label>
+            <label class="choice"><input type="radio" name="overall_satisfaction" value="Satisfied"><span>Satisfied</span></label>
+            <label class="choice"><input type="radio" name="overall_satisfaction" value="Neutral"><span>Neutral</span></label>
+            <label class="choice"><input type="radio" name="overall_satisfaction" value="Dissatisfied"><span>Dissatisfied</span></label>
+            <label class="choice"><input type="radio" name="overall_satisfaction" value="Very dissatisfied"><span>Very dissatisfied</span></label>
+          </div><p class="field-error" id="overall_satisfaction-error" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="question" data-required-group="support_responsiveness" tabindex="-1">
+          <legend><span class="question-number">2</span><span>When you need IT support, how satisfied are you with the speed and responsiveness of our team? <span class="required">Required</span></span></legend>
+          <div class="radio-list">
+            <label class="choice"><input type="radio" name="support_responsiveness" value="Extremely satisfied" required><span>Extremely satisfied</span></label>
+            <label class="choice"><input type="radio" name="support_responsiveness" value="Satisfied"><span>Satisfied</span></label>
+            <label class="choice"><input type="radio" name="support_responsiveness" value="Neutral"><span>Neutral</span></label>
+            <label class="choice"><input type="radio" name="support_responsiveness" value="Dissatisfied"><span>Dissatisfied</span></label>
+            <label class="choice"><input type="radio" name="support_responsiveness" value="Very dissatisfied"><span>Very dissatisfied</span></label>
+          </div><p class="field-error" id="support_responsiveness-error" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="question" data-required-group="business_confidence" tabindex="-1">
+          <legend><span class="question-number">3</span><span>How confident are you that your current IT environment supports your business effectively? <span class="required">Required</span></span></legend>
+          <div class="radio-list">
+            <label class="choice"><input type="radio" name="business_confidence" value="Very confident" required><span>Very confident</span></label>
+            <label class="choice"><input type="radio" name="business_confidence" value="Confident"><span>Confident</span></label>
+            <label class="choice"><input type="radio" name="business_confidence" value="Somewhat confident"><span>Somewhat confident</span></label>
+            <label class="choice"><input type="radio" name="business_confidence" value="Not very confident"><span>Not very confident</span></label>
+            <label class="choice"><input type="radio" name="business_confidence" value="Not confident at all"><span>Not confident at all</span></label>
+          </div><p class="field-error" id="business_confidence-error" aria-live="polite"></p>
+        </fieldset>
+
+        <section class="question" aria-labelledby="improvement-label">
+          <div class="question-title"><span class="question-number">4</span><div><label id="improvement-label" for="improvement-feedback">What is the one thing we could improve to better support your business? <span class="optional">Optional</span></label></div></div>
+          <textarea id="improvement-feedback" name="improvement_feedback" maxlength="1000" rows="6" placeholder="Share any service, communication, support, or technology improvements you would like us to consider." aria-describedby="character-count"></textarea>
+          <p class="character-count" id="character-count" aria-live="polite"><span>0</span> / 1000</p>
+        </section>
+
+        <fieldset class="question" data-required-group="recommendation_score" tabindex="-1">
+          <legend><span class="question-number">5</span><span>How likely are you to recommend My IT Support USA to another business? <span class="required">Required</span></span></legend>
+          <div class="score-grid" role="radiogroup" aria-label="Recommendation score from 0 to 10">
+            <label class="score"><input type="radio" name="recommendation_score" value="0" required><span>0</span></label><label class="score"><input type="radio" name="recommendation_score" value="1"><span>1</span></label><label class="score"><input type="radio" name="recommendation_score" value="2"><span>2</span></label><label class="score"><input type="radio" name="recommendation_score" value="3"><span>3</span></label><label class="score"><input type="radio" name="recommendation_score" value="4"><span>4</span></label><label class="score"><input type="radio" name="recommendation_score" value="5"><span>5</span></label><label class="score"><input type="radio" name="recommendation_score" value="6"><span>6</span></label><label class="score"><input type="radio" name="recommendation_score" value="7"><span>7</span></label><label class="score"><input type="radio" name="recommendation_score" value="8"><span>8</span></label><label class="score"><input type="radio" name="recommendation_score" value="9"><span>9</span></label><label class="score"><input type="radio" name="recommendation_score" value="10"><span>10</span></label>
+          </div><div class="score-labels"><span>Not at all likely</span><span>Extremely likely</span></div><p class="field-error" id="recommendation_score-error" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="question" data-required-group="service_value" tabindex="-1">
+          <legend><span class="question-number">6</span><span>What do you value most about our service? <span class="required">Required</span></span></legend>
+          <div class="radio-list">
+            <label class="choice"><input type="radio" name="service_value" value="Friendly and helpful technicians" required><span>Friendly and helpful technicians</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Fast response times"><span>Fast response times</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Problems are resolved properly"><span>Problems are resolved properly</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Clear communication"><span>Clear communication</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Reliability and consistency"><span>Reliability and consistency</span></label>
+            <label class="choice"><input type="radio" name="service_value" value="Other"><span>Other</span></label>
+          </div><p class="field-error" id="service_value-error" aria-live="polite"></p>
+        </fieldset>
+
+        <section class="submit-section">
+          <button class="button primary" id="submit-button" type="submit">Submit My Feedback</button>
+          <p class="privacy">Your responses will only be used to improve our service and follow up when appropriate. Please do not include passwords or other sensitive information.</p>
+          <p id="form-status" class="form-status" role="alert" aria-live="assertive" tabindex="-1"></p>
+        </section>
+      </form>
+    </section>
+
+    <section id="success-section" class="success-section" hidden aria-labelledby="success-heading">
+      <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><p class="eyebrow">Response received</p><h2 id="success-heading" tabindex="-1">Thank You for Your Feedback</h2><p>Your response has been received. We appreciate you taking the time to help us improve how we support your business.</p></div>
+      <div id="review-section" class="review-card" hidden><img src="assets/Google-Review-Logo.png" alt="Google Reviews" class="google-review-logo"><h2>Would You Share Your Experience on Google?</h2><p>Online reviews help other businesses make a more informed decision when choosing an IT provider. If you are comfortable doing so, we would appreciate you sharing an honest review of your experience with My IT Support USA.</p><a class="button primary" href="https://g.page/r/CQuyCfl7Ayj5EAI/review" target="_blank" rel="noopener noreferrer">Leave an Honest Google Review <span aria-hidden="true">↗</span></a><p class="optional-note">Leaving a review is completely optional. We value your feedback either way.</p></div>
+    </section>
+  </main>
+
+  <footer><strong>My IT Support USA</strong><p>Structured IT support that reduces downtime, strengthens security, and improves productivity.</p><a href="https://www.myitsupportusa.com/">Visit My IT Support USA</a></footer>
+</body>
+</html>
