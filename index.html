@@ -21,7 +21,7 @@
 
   <main id="main-content">
     <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">Client satisfaction survey</p>
+      <p class="eyebrow">CLIENT FEEDBACK</p>
       <h1 id="page-title">How Are We Doing?</h1>
       <p class="intro">Your feedback helps us improve how we support your business. This survey should take less than two minutes to complete.</p>
       <ul class="indicators" aria-label="Survey details">
@@ -39,6 +39,16 @@
         <input type="hidden" name="page_url" id="page-url">
         <input type="hidden" name="submission_timestamp" id="submission-timestamp">
         <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+
+        <div class="survey-progress">
+          <div class="progress-meta">
+            <span>Survey progress</span>
+            <span id="progress-text">0 of 6 questions completed</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" aria-labelledby="progress-text">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
 
         <section class="form-section information" aria-labelledby="information-heading">
           <div class="section-heading"><p class="section-kicker">Before we begin</p><h2 id="information-heading">Your Information</h2><p>Both fields are optional.</p></div>
@@ -115,8 +125,8 @@
     </section>
 
     <section id="success-section" class="success-section" hidden aria-labelledby="success-heading">
-      <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><p class="eyebrow">Response received</p><h2 id="success-heading" tabindex="-1">Thank You for Your Feedback</h2><p>Your response has been received. We appreciate you taking the time to help us improve how we support your business.</p></div>
-      <div id="review-section" class="review-card" hidden><img src="assets/Google-Review-Logo.png" alt="Google Reviews" class="google-review-logo"><h2>Would You Share Your Experience on Google?</h2><p>Online reviews help other businesses make a more informed decision when choosing an IT provider. If you are comfortable doing so, we would appreciate you sharing an honest review of your experience with My IT Support USA.</p><a class="button primary" href="https://g.page/r/CQuyCfl7Ayj5EAI/review" target="_blank" rel="noopener noreferrer">Leave an Honest Google Review <span aria-hidden="true">↗</span></a><p class="optional-note">Leaving a review is completely optional. We value your feedback either way.</p></div>
+      <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><h2 id="success-heading" tabindex="-1">Thank You</h2><p>We appreciate you taking the time to share your feedback.</p><p>Every response is reviewed by our team and helps us improve the service we provide.</p></div>
+      <div id="review-section" class="review-card" hidden><p class="eyebrow">ONE LAST FAVOR</p><img src="assets/Google-Review-Logo.png" alt="Google Reviews" class="google-review-logo"><h2>Would You Share Your Experience on Google?</h2><p>If you have had a positive experience working with My IT Support USA, would you consider sharing an honest Google review?</p><p>Your review helps other businesses understand what it is like to work with our team.</p><a class="button primary" href="https://g.page/r/CQuyCfl7Ayj5EAI/review" target="_blank" rel="noopener noreferrer">Leave an Honest Google Review <span aria-hidden="true">↗</span></a><p class="optional-note">Leaving a review is completely optional. We value your feedback either way.</p></div>
     </section>
   </main>
 

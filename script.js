@@ -8,6 +8,9 @@
   const reviewSection = document.querySelector("#review-section");
   const feedback = document.querySelector("#improvement-feedback");
   const count = document.querySelector("#character-count span");
+  const progressTrack = document.querySelector(".progress-track");
+  const progressFill = document.querySelector("#progress-fill");
+  const progressText = document.querySelector("#progress-text");
   const requiredGroups = [...form.querySelectorAll("[data-required-group]")];
   let isSubmitting = false;
   let isSubmitted = false;
@@ -19,6 +22,17 @@
 
   function updateCharacterCount() {
     count.textContent = feedback.value.length;
+  }
+
+  function updateProgress() {
+    const answeredRadioGroups = requiredGroups.filter((group) => {
+      const name = group.dataset.requiredGroup;
+      return form.querySelector(`input[name="${name}"]:checked`);
+    }).length;
+    const completed = answeredRadioGroups + (feedback.value.trim() ? 1 : 0);
+    progressTrack.setAttribute("aria-valuenow", String(completed));
+    progressFill.style.width = `${(completed / 6) * 100}%`;
+    progressText.textContent = `${completed} of 6 questions completed`;
   }
 
   function clearGroupError(group) {
@@ -98,7 +112,14 @@
 
   populateMetadata();
   updateCharacterCount();
-  feedback.addEventListener("input", updateCharacterCount);
-  requiredGroups.forEach((group) => group.addEventListener("change", () => clearGroupError(group)));
+  updateProgress();
+  feedback.addEventListener("input", () => {
+    updateCharacterCount();
+    updateProgress();
+  });
+  requiredGroups.forEach((group) => group.addEventListener("change", () => {
+    clearGroupError(group);
+    updateProgress();
+  }));
   form.addEventListener("submit", submitSurvey);
 })();

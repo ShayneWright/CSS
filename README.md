@@ -8,7 +8,7 @@ This is a lightweight, accessible client satisfaction survey for My IT Support U
 
 - `index.html` contains metadata, the survey form, accessible controls, hidden Formspree fields, success content, review invitation, and footer.
 - `styles.css` provides the responsive branded layout, selectable cards, focus/error states, and reduced-motion support.
-- `script.js` manages metadata, the character counter, validation, spam protection, asynchronous submission, and success/error states.
+- `script.js` manages metadata, the character counter, six-section progress indicator, validation, spam protection, asynchronous submission, and success/error states.
 
 ## Formspree configuration
 
