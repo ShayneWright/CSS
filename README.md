@@ -18,7 +18,7 @@ If the Formspree form changes, replace the URL in the form's `action` attribute.
 
 ## Google review configuration
 
-The review button in the hidden `#review-section` in `index.html` links to `https://g.page/r/CQuyCfl7Ayj5EAI/review`. Replace that link's `href` if the Google Business Profile review URL changes.
+The review button in the post-submission `#review-section` content inside `index.html` links to `https://g.page/r/CQuyCfl7Ayj5EAI/review`. Replace that link's `href` if the Google Business Profile review URL changes.
 
 ### Review invitation rule
 

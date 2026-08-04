@@ -5,7 +5,6 @@
   const submitButton = document.querySelector("#submit-button");
   const statusMessage = document.querySelector("#form-status");
   const successSection = document.querySelector("#success-section");
-  const reviewSection = document.querySelector("#review-section");
   const feedback = document.querySelector("#improvement-feedback");
   const count = document.querySelector("#character-count span");
   const progressTrack = document.querySelector(".progress-track");
@@ -76,11 +75,12 @@
     isSubmitted = true;
     setLoading(false);
     statusMessage.textContent = "";
+    document.body.classList.add("submission-complete");
     form.closest(".survey-card").hidden = true;
     successSection.hidden = false;
-    reviewSection.hidden = false;
     const heading = document.querySelector("#success-heading");
-    successSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    successSection.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
     heading.focus({ preventScroll: true });
   }
 
